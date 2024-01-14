@@ -17,7 +17,7 @@ if __name__ == "__main__":
     calculated_fields = []
 
     # Define column names
-    columns = ['worksheet', 'filters', 'fields', 'calculations']
+    columns = ['Worksheet Name', 'Filters', 'Fields', 'Calculations']
 
     # Create an empty DataFrame with specified columns
     df = pd.DataFrame(columns=columns)
