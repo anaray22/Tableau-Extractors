@@ -79,9 +79,9 @@ if __name__ == "__main__":
      
 
         # Assign fields names to each row
-        row['fields'] = concatenated_string_fields
-        row['calculations'] = concatenated_string_calcs
-        row['filters'] = concatenated_string_filters
+        row['Fields'] = concatenated_string_fields
+        row['Calculations'] = concatenated_string_calcs
+        row['Filters'] = concatenated_string_filters
 
 
         # Clear the list after extracting details from a worksheet
@@ -90,14 +90,14 @@ if __name__ == "__main__":
         filters.clear()
 
     # Cleaning the calculated field column
-    df['calculations'] = df['calculations'] = df['calculations'].str.strip(',')
+    df['Calculations'] = df['Calculations'] = df['Calculations'].str.strip(',')
     
     # Cleaning filter field
-    df['filters'] = df['filters'].str.replace('nk','')
-    df['filters'] = df['filters'].str.replace('none','')
-    df['filters'] = df['filters'].str.replace(':','')
-    df['filters'] = df['filters'].str.replace('[','')
-    df['filters'] = df['filters'].str.replace(']','')
+    df['Filters'] = df['filters'].str.replace('nk','')
+    df['Filters'] = df['filters'].str.replace('none','')
+    df['Filters'] = df['filters'].str.replace(':','')
+    df['Filters'] = df['filters'].str.replace('[','')
+    df['Filters'] = df['filters'].str.replace(']','')
     
     # Excel file path
     excel_file_path = 'worksheet_details.xlsx'
