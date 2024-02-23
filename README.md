@@ -17,3 +17,19 @@ Python code to extract information from Tableau Metadata
   2) Type "python worksheet_extractors.py"
   3) Upload twb file in the dailog that appears.
   4) A excel sheet will be generated in the same directory as the Code is downloaded.
+
+
+2) Unused Calculation
+---------------------
+
+   Calculations in workbook are used either in a worksheet or used to create other calculated field. Often during analysis developers create calculations and they are not used, which can affect the performance of workbook. 
+
+This code helps us identify the calculations that are not used in workbook.
+
+How to Use
+----------
+
+  1) Open command promt and navigate to respective directory.
+  2) Type "python unused.py"
+  3) Upload twb file in the dailog that appears.
+  4) A excel sheet will be generated in the same directory as the Code is downloaded.
