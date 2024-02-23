@@ -1,5 +1,5 @@
 # Tableau-Extractors
-Python code to understand Tableau workbooks and better workbooks
+Python code to understand Tableau workbooks and better build efficient Tableau Workbooks workbooks
 
 1) Worksheet Extractor
 ----------------------
