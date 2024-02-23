@@ -93,12 +93,12 @@ if __name__ == "__main__":
     df['Calculations'] = df['Calculations'] = df['Calculations'].str.strip(',')
     
     # Cleaning filter field
-    df['Filters'] = df['filters'].str.replace('nk','')
-    df['Filters'] = df['filters'].str.replace('none','')
-    df['Filters'] = df['filters'].str.replace(':','')
-    df['Filters'] = df['filters'].str.replace('[','')
-    df['Filters'] = df['filters'].str.replace(']','')
-    
+    df['Filters'] = df['Filters'].str.replace('nk','')
+    df['Filters'] = df['Filters'].str.replace('none','')
+    df['Filters'] = df['Filters'].str.replace(':','')
+    df['Filters'] = df['Filters'].str.replace('[','')
+    df['Filters'] = df['Filters'].str.replace(']','')
+
     # Excel file path
     excel_file_path = 'worksheet_details.xlsx'
 
@@ -136,4 +136,13 @@ if __name__ == "__main__":
         for cell in rows:
             cell.alignment = Alignment(wrapText=True)
 
+   #
+    for row in sheet['A1:D100']:
+        for cell in row:
+            cell.value = cell.value.replace(',','\n')
+            
+ 
     workbook.save(excel_file_path)
+
+
+    
