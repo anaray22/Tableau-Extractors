@@ -1,5 +1,5 @@
 # Tableau-Extractors
-Python code to extract information from Tableau Metadata
+Python code to understand Tableau workbooks and better workbooks
 
 1) Worksheet Extractor
 ----------------------
