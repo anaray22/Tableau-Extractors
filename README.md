@@ -23,7 +23,7 @@ Python code to understand Tableau workbooks and better workbooks
 Unused Calculation
 ---------------------
 
-   Calculations in workbook are used either in a worksheet or used to create other calculated field. Often during analysis developers create calculations and they are not used, which can affect the performance of workbook. 
+   Calculations in workbook are used either in a worksheet or used to create other calculated fields. Often during analysis developers create calculations and they are not used in tableau workbook. It is hard to identify the calculations that are used in Tableau workbook, it often makes it hard to maintain them.
 
 This code helps us identify the calculations that are not used in workbook.
 
